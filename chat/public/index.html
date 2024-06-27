@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WickrDuo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="flex items-center justify-center h-screen">
+        <div class="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
+            <header class="text-center mb-6">
+                <h1 class="text-4xl font-bold flex items-center justify-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="h-10 w-10">
+                        <image href="/img/my-melody-seeklogo.svg" width="100%" height="100%" />
+                    </svg>
+                    <span>WickrDuo</span>
+                </h1>
+            </header>
+            <main class="space-y-4">
+                <form action="chat.html">
+                    <div>
+                        <label for="username" class="block mb-1 text-gray-400">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter username..." required
+                            class="w-full px-3 py-2 text-gray-900 bg-gray-700 border rounded-md focus:outline-none focus:bg-gray-600 focus:border-gray-500">
+                    </div>
+                    <div>
+                        <label for="room" class="block mb-1 text-gray-400">Room</label>
+                        <select name="room" id="room"
+                            class="w-full px-3 py-2 text-gray-900 bg-gray-700 border rounded-md appearance-none focus:outline-none focus:bg-gray-600 focus:border-gray-500">
+                            <option value="Private">Private</option>
+                            <option value="Public">Public</option>
+                        </select>
+                    </div>
+					<br>
+                    <button type="submit"
+                        class="w-full px-4 py-2 text-lg text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        Join Chat</button>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
